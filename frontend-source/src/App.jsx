@@ -2,9 +2,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "http://localhost:3000/employeelist";
-const AUTH = "http://localhost:3000/api/auth";
-
+const API = "https://employee-dashboard-assignment3.onrender.com/employeelist";
+const AUTH = "https://employee-dashboard-assignment3.onrender.com/api/auth";
 export default function App() {
   const [token, setToken] = useState(
     () => sessionStorage.getItem("employeeToken") || ""
